@@ -1,3 +1,9 @@
-<p><%= @question %></p>
-<p><%= @response %></p>
-<%= link_to("Ask", ask_path) %>
+<blockquote class="blockquote m-4">
+  <p><%= @question %></p>
+  <footer class="blockquote-footer">You</footer>
+</blockquote>
+<blockquote class="blockquote m-4">
+  <p><mark><%= @response %></mark></p>
+  <footer class="blockquote-footer"><mark>Your coach</mark></footer>
+</blockquote>
+  <button type="button" class="btn btn-link"><%= link_to("Ask", ask_path) %></button>
